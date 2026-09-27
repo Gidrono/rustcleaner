@@ -97,7 +97,7 @@ struct SettingsView: View {
                 Section("Privacy") {
                     LabeledContent("Analytics", value: "Off")
                     LabeledContent("Network", value: "VLM download only")
-                    Link("Privacy policy", destination: URL(string: "https://github.com/gidi/rustioscleaner/blob/main/PRIVACY.md")!)
+                    Link("Privacy policy", destination: URL(string: "https://github.com/Gidrono/rustcleaner/blob/main/PRIVACY.md")!)
                 }
                 Section {
                     Toggle("Google Photos", isOn: $model.backsUpGooglePhotos)

@@ -12,7 +12,7 @@ version = "0.1.0"
 edition = "2021"
 license = "MIT"
 authors = ["Gidi Hanoch"]
-repository = "https://github.com/gidi/rustioscleaner"
+repository = "https://github.com/Gidrono/rustcleaner"
 
 [workspace.dependencies]
 anyhow = "1"
