@@ -1,7 +1,8 @@
-# RustCleaner
+# Imuhar
 
 <p align="center">
-  <strong>Cull by intent, not pixels.</strong><br/>
+  <strong>Imuhar: Free Up Space</strong><br/>
+  Cull by intent, not pixels.<br/>
   Privacy-first photo cleanup for iOS 18+ — on-device models, explainable Keep/Toss, deletes go to Recently Deleted.
 </p>
 
@@ -24,7 +25,7 @@
 
 Your camera roll is full of **utility junk** (receipts, whiteboard shots, screenshots of screenshots), **social misses** (blinks, looking away), and **weaker frames** from every burst. Apple’s duplicate finder is pixel-matching. Most “cleaner” apps are freemium traps that want your photos in the cloud.
 
-**RustCleaner** asks a different question: *what was the human trying to do with this photo?* Then it explains why something should go.
+**Imuhar** asks a different question: *what was the human trying to do with this photo?* Then it explains why something should go.
 
 ## What it finds
 

@@ -1,8 +1,8 @@
-# Privacy Policy — RustCleaner
+# Privacy Policy — Imuhar
 
 **Last updated:** 2026-09-24
 
-RustCleaner is a privacy-first, open-source iOS app. This document is the source of truth for what the app does with your data.
+Imuhar is a privacy-first, open-source iOS app. This document is the source of truth for what the app does with your data.
 
 ## Data collection
 

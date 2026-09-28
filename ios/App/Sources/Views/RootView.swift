@@ -70,10 +70,11 @@ struct HomeView: View {
                         .accessibilityLabel("Start keep or toss review")
                     }
                     privacyCard
+                    contactCard
                 }
                 .padding()
             }
-            .navigationTitle("RustCleaner")
+            .navigationTitle("Imuhar: Free Up Space")
             .overlay {
                 if model.isScanning {
                     ProgressView(model.scanProgress.isEmpty ? "Scanning…" : model.scanProgress)
@@ -93,8 +94,8 @@ struct HomeView: View {
             .font(.headline)
             Text(
                 model.photosAccessIsLimited
-                    ? "You’re on Limited Access. Choose the photos RustCleaner can see (including new ones), then scan again."
-                    : "RustCleaner needs access to your photo library to find cleanup candidates. Nothing leaves your iPhone."
+                    ? "You’re on Limited Access. Choose the photos Imuhar can see (including new ones), then scan again."
+                    : "Imuhar needs access to your photo library to find cleanup candidates. Nothing leaves your iPhone."
             )
             .font(.footnote)
             .foregroundStyle(.secondary)
@@ -175,6 +176,30 @@ struct HomeView: View {
         .padding()
         .frame(maxWidth: .infinity, alignment: .leading)
         .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 14))
+    }
+
+    private var contactCard: some View {
+        VStack(alignment: .leading, spacing: 8) {
+            Text("Created by Gidrono")
+                .font(.headline)
+            Text("Questions or feedback?")
+                .font(.footnote)
+                .foregroundStyle(.secondary)
+            Link("support@qamishlo.org", destination: URL(string: "mailto:support@qamishlo.org")!)
+                .font(.footnote)
+            Text("This app is open source. The code is available on GitHub.")
+                .font(.footnote)
+                .foregroundStyle(.secondary)
+            Link(
+                "github.com/Gidrono/rustcleaner",
+                destination: URL(string: "https://github.com/Gidrono/rustcleaner")!
+            )
+            .font(.footnote)
+        }
+        .padding()
+        .frame(maxWidth: .infinity, alignment: .leading)
+        .background(Color(.secondarySystemBackground), in: RoundedRectangle(cornerRadius: 14))
+        .accessibilityElement(children: .contain)
     }
 }
 
